@@ -27,7 +27,7 @@ const Experience = () => {
       ref={ref}
       animate={isInView && "animate"}>
       <h1 className='text-4xl text-white font-bold uppercase mt-5'>
-        Experince
+        Experience
       </h1>
       <motion.div className='grid md:grid-cols-2 gap-4 mt-10'>
         <motion.div className='p-4'>

@@ -10,6 +10,7 @@ const AboutMe = () => {
   const [React, setReact] = useState(0)
   const [mui, setMui] = useState(0)
   const [tailwind, setTailwind] = useState(0)
+  const [typescript, setTypescript] = useState(0)
 
   const ref = useRef<any>()
   const isInView = useInView(ref, { margin: "-100px" })
@@ -34,8 +35,9 @@ const AboutMe = () => {
     setTimeout(() => {
       setHtml(70)
       setCss(80)
-      setJs(60)
-      setReact(60)
+      setJs(70)
+      setReact(70)
+      setTypescript(70)
       setMui(60)
       setTailwind(80)
     }, 1000)
@@ -76,7 +78,15 @@ const AboutMe = () => {
               // barContainerClassName="container"
             />
           </motion.div>
-
+          <motion.div className='mt-6'>
+            <h1 className='text-white m-2 text-xl'>Typescript</h1>
+            <ProgressBar
+              completed={typescript}
+              bgColor='#2596be'
+              // completedClassName="barCompleted"
+              // barContainerClassName="container"
+            />
+          </motion.div>
           <motion.div className='mt-6'>
             <h1 className='text-white m-2 text-xl'>React Js</h1>
             <ProgressBar
@@ -86,7 +96,6 @@ const AboutMe = () => {
               // barContainerClassName="container"
             />
           </motion.div>
-
           <motion.div className='mt-6'>
             <h1 className='text-white m-2 text-xl'>MUI</h1>
             <ProgressBar
@@ -96,7 +105,6 @@ const AboutMe = () => {
               // barContainerClassName="container"
             />
           </motion.div>
-
           <motion.div className='mt-6'>
             <h1 className='text-white m-2 text-xl'>Tailwind Css</h1>
             <ProgressBar
